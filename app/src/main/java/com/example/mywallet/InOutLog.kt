@@ -10,7 +10,7 @@ import java.util.*
 
 class InOutLog(
     @PrimaryKey(autoGenerate = true) val id:Int,
-    val amount: Currency,
+    val amount: Float,
     val type: Int,
-    val created_at: Date
+    val created_at: Long = System.currentTimeMillis()
 )
