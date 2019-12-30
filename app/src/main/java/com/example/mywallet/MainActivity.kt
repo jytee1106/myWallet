@@ -28,7 +28,7 @@ class MainActivity : AppCompatActivity() {
 
         //Initialize the Viewmodel
         inOutLogViewModel = ViewModelProvider(this)
-            .get(inOutLogViewModel::class.java)
+            .get(InOutLogViewModel::class.java)
 
         inOutLogViewModel.allLogs.observe(
             this, Observer {
